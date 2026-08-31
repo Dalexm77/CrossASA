@@ -1,0 +1,134 @@
+(session freerouting
+  (base_design freerouting)
+  (placement
+    (resolution um 10)
+    (component "Resistor_THT:R_Axial_Power_L25.0mm_W6.4mm_P30.48mm"
+      (place R2 1205000 -677550 front 270)
+    )
+    (component "Inductor_THT:L_Axial_L30.0mm_D8.0mm_P35.56mm_Horizontal_Fastron_77A"
+      (place L1 1019400 -260000 front 0)
+    )
+    (component "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
+      (place H6 428750 -1040750 front 0)
+      (place H5 428750 -987250 front 0)
+      (place H4 375250 -1040750 front 0)
+      (place H3 375250 -987250 front 0)
+      (place H2 321750 -1040750 front 0)
+      (place H1 321750 -987250 front 0)
+    )
+    (component "Capacitor_THT:CP_Axial_L37.0mm_D20.0mm_P43.00mm_Horizontal"
+      (place C1 1330000 -500000 front 0)
+      (place C2 780000 -500000 front 0)
+    )
+    (component "Resistor_THT:R_Axial_Power_L25.0mm_W6.4mm_P30.48mm::1"
+      (place R4 857950 -677550 front 270)
+      (place R3 1030000 -677550 front 270)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "10.0.3")
+    )
+    (library_out 
+      (padstack "Via[0-1]_600:300_um"
+        (shape
+          (circle F.Cu 6000 0 0)
+        )
+        (shape
+          (circle B.Cu 6000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net "/<NO NET>"
+        (wire
+          (path F.Cu 2000
+            428750 -987250
+            853050 -987250
+            857950 -982350
+          )
+        )
+        (wire
+          (path B.Cu 2000
+            428750 -987250
+            428750 -1040750
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            375250 -1040750
+            428750 -1040750
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            375250 -987250
+            428750 -987250
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            321750 -1040750
+            375250 -1040750
+          )
+        )
+        (wire
+          (path B.Cu 2000
+            321750 -987250
+            321750 -1040750
+          )
+        )
+        (wire
+          (path B.Cu 2000
+            1210000 -500000
+            1220142 -510142
+            1220142 -967208
+            1205000 -982350
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1760000 -500000
+            1330000 -500000
+          )
+        )
+        (wire
+          (path B.Cu 2000
+            857950 -677550
+            857950 -982350
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1210000 -500000
+            1330000 -500000
+          )
+        )
+        (wire
+          (path B.Cu 2000
+            857950 -677550
+            857950 -577950
+            780000 -500000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1030000 -982350
+            1205000 -982350
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1030000 -982350
+            857950 -982350
+          )
+        )
+      )
+    )
+  )
+)
